@@ -67,7 +67,7 @@ describe('checksCreateTodosUserAvailability', () => {
         name: 'Atlas',
         username: 'atlas',
         pro: false,
-        todos: Array.from({ length: 10 }, () => ({
+        todos: Array.from({ length: 9 }, () => ({
           id: v4(),
           title: 'Todo',
           deadline: new Date(),
