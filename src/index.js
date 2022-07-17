@@ -44,6 +44,11 @@ function checksTodoExists(request, response, next) {
     return response.status(404).json({ error: 'User not found'})
   }
 
+  const todo = user.todos.find(todo => todo.id === typeof uuidv4())
+  if (!todo) {
+    return response.status(400)
+  }
+
 }
 
 function findUserById(request, response, next) {
